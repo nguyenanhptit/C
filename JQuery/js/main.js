@@ -8,7 +8,7 @@ $(function () {
 
     $("#ani").click(function () {
        var div = $("#hello");
-       div.animate({left:'500px',fontSize:'100px'},"normal");
+       div.animate({left:'500px',fontSize:'100px', color:'red'},"normal");
 
     });
 
