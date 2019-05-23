@@ -1,4 +1,3 @@
-import "./scss/styles.scss";
 
 /**
  * If/else
@@ -44,10 +43,10 @@ for (const item of keys) {
 }
 
 console.log("for-in loop");
-const user = {
+const user1 = {
   name: 'Bob',
   age: 55
 };
-for (const key in user) {
-  console.log(`${key}: ${user[key]}`);
+for (const key in user1) {
+  console.log(`${key}: ${user1[key]}`);
 }
