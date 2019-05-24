@@ -1,4 +1,3 @@
-import './scss/styles.scss';
 
 interface IUser {
   name: string;
@@ -46,6 +45,7 @@ class Rect extends Shape implements IArea {
 }
 
 const rect = new Rect(5, 5, 10, 20);
+console.log(rect.height);
 console.log(rect.toString());
 console.log(rect.area());
 
