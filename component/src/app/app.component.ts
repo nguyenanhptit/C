@@ -12,4 +12,8 @@ export class AppComponent {
   finishCountdown() {
     this.countdownMsg = 'finish !!!!!';
   }
+
+  onRateChange($event: number) {
+  console.log($event);
+  }
 }

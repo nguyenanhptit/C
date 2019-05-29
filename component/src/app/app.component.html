@@ -25,3 +25,4 @@
 <app-progress-bar width="25"></app-progress-bar>
 <app-countdown-timer-get-set [seconds]="10" (finish)="finishCountdown()"></app-countdown-timer-get-set>
 <p>{{countdownMsg}}</p>
+<app-rating-bar [max]="10" (rateChange)="onRateChange($event)"></app-rating-bar>

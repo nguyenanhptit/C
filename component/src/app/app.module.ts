@@ -7,6 +7,7 @@ import { NameCardComponent } from './name-card/name-card.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { CountdownTimerComponent } from './countdown-timer/countdown-timer.component';
 import { CountdownTimerGetSetComponent } from './countdown-timer-get-set/countdown-timer-get-set.component';
+import { RatingBarComponent } from './rating-bar/rating-bar.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CountdownTimerGetSetComponent } from './countdown-timer-get-set/countdo
     NameCardComponent,
     ProgressBarComponent,
     CountdownTimerComponent,
-    CountdownTimerGetSetComponent
+    CountdownTimerGetSetComponent,
+    RatingBarComponent
   ],
   imports: [
     BrowserModule,
