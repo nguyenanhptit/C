@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {FormControl} from '@angular/forms';
+import {LoginServiceService} from '../service/login-service.service';
 
 @Component({
   selector: 'app-login-step2',
@@ -6,10 +8,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login-step2.component.scss']
 })
 export class LoginStep2Component implements OnInit {
+  username: string;
+  password = new FormControl();
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(private loginSrv: LoginServiceService) {
   }
 
+  ngOnInit() {
+    this.username = this.loginSrv.loginData.username;
+  }
+
+  login() {
+    console.log({
+      username: this.username,
+      password: this.password.value
+    });
+  }
 }

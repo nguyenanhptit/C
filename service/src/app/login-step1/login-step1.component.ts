@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {FormControl} from '@angular/forms';
+import {Route, Router} from '@angular/router';
+import {LoginServiceService} from '../service/login-service.service';
 
 @Component({
   selector: 'app-login-step1',
@@ -6,10 +9,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login-step1.component.scss']
 })
 export class LoginStep1Component implements OnInit {
+  username = new FormControl('');
 
-  constructor() { }
+  constructor(private router: Router,
+              private loginSrv: LoginServiceService) {
+  }
 
   ngOnInit() {
   }
 
+  nextStep() {
+    this.loginSrv.loginData.username = this.username.value;
+    this.router.navigateByUrl('/login2');
+  }
 }

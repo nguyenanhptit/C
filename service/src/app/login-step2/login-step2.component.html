@@ -1,3 +1,11 @@
 <p>
   login-step2 works!
 </p>
+
+<div>
+  <label>
+    Pass for {{username}}
+    <input type="password" [formControl]="password">
+  </label>
+</div>
+<button (click)="login()">Next</button>

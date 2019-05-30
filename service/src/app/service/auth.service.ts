@@ -24,7 +24,7 @@ export class IAuthService implements AuthService {
   login() {
     this.user = {
       name: 'nguyenanh',
-      token: 'token'
+      token: 'nguyenanh'
     }
     ;
   }

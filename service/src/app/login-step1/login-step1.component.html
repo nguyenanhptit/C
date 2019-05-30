@@ -1,3 +1,11 @@
 <p>
   login-step1 works!
 </p>
+
+<div>
+  <label>
+    Username:
+    <input type="text" [formControl]="username">
+  </label>
+</div>
+<button (click)="nextStep()">Next</button>

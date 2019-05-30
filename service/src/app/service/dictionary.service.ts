@@ -6,11 +6,10 @@ export interface IWord {
 }
 
 
-// @NgModule({
-//   providers: [DictionaryService],
-// })
 export interface DictionaryService {
   search(word: string): string;
+
+  getAll(): IWord[];
 }
 
 @Injectable({
