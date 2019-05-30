@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { DictionaryComponent } from './dictionary/dictionary.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import { DictionaryPageComponent } from './dictionary-page/dictionary-page.component';
+import { DictionaryDetailComponent } from './dictionary-detail/dictionary-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DictionaryComponent,
-    DictionaryPageComponent
+    DictionaryPageComponent,
+    DictionaryDetailComponent
   ],
   imports: [
     BrowserModule,

@@ -2,10 +2,15 @@ import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {DictionaryComponent} from './dictionary/dictionary.component';
 import {DictionaryPageComponent} from './dictionary-page/dictionary-page.component';
+import {DictionaryDetailComponent} from './dictionary-detail/dictionary-detail.component';
 
 const routes: Routes = [{
   path: 'dictionary',
-  component: DictionaryPageComponent
+  component: DictionaryPageComponent,
+  children: [{
+    path: ':key',
+    component: DictionaryDetailComponent
+  }]
 }];
 
 @NgModule({

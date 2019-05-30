@@ -5,15 +5,18 @@ export interface IWord {
   meaning: string;
 }
 
-@Injectable({
-  providedIn: 'root'
-})
 
 // @NgModule({
 //   providers: [DictionaryService],
 // })
+export interface DictionaryService {
+  search(word: string): string;
+}
 
-export class DictionaryService {
+@Injectable({
+  providedIn: 'root'
+})
+export class IDictionaryService implements DictionaryService {
 
   constructor() {
   }

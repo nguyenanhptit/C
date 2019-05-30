@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {DictionaryService, IWord} from '../dictionary.service';
+import {IDictionaryService, IWord} from '../dictionary.service';
 
 @Component({
   selector: 'app-dictionary',
@@ -10,7 +10,7 @@ export class DictionaryComponent implements OnInit {
 
   word: IWord;
 
-  constructor(private dictionaryService: DictionaryService) {
+  constructor(private dictionaryService: IDictionaryService) {
   }
 
   search(word: string) {
