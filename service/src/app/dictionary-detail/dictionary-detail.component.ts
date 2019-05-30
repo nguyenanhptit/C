@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, ParamMap} from '@angular/router';
-import {DictionaryService, IDictionaryService, IWord} from '../dictionary.service';
+import {DictionaryService, IDictionaryService, IWord} from '../service/dictionary.service';
 import {Subscription} from 'rxjs';
 
 @Component({

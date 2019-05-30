@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {IDictionaryService, IWord} from '../dictionary.service';
+import {IDictionaryService, IWord} from '../service/dictionary.service';
+import {IAuthService} from '../service/auth.service';
 
 @Component({
   selector: 'app-dictionary',
@@ -10,7 +11,8 @@ export class DictionaryComponent implements OnInit {
 
   word: IWord;
 
-  constructor(private dictionaryService: IDictionaryService) {
+  constructor(private dictionaryService: IDictionaryService,
+              public authService: IAuthService) {
   }
 
   search(word: string) {
